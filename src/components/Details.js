@@ -17,7 +17,6 @@ class Details extends Component {
             inCart
           } = value.detailProduct;
 
-
           return (
             <div className={"container"}>
               {/* title */}
@@ -59,6 +58,7 @@ class Details extends Component {
                         disabled={inCart ? true : false}
                         onClick={() => {
                             value.addToCart(id);
+                            value.openModal(id);
                     }}>
                       {inCart ? "in cart" : "add to cart"}
                     </ButtonContainer>
