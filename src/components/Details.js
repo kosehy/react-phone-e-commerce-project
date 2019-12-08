@@ -17,6 +17,7 @@ class Details extends Component {
             inCart
           } = value.detailProduct;
 
+
           return (
             <div className={"container"}>
               {/* title */}
@@ -34,8 +35,7 @@ class Details extends Component {
                 {/* product text */}
                 <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
                   <h2>model : {title}</h2>
-                  <h4
-                    className={"text-title text-uppercase text-muted mt-3 mb-2"}>
+                  <h4 className={"text-title text-uppercase text-muted mt-3 mb-2"}>
                     made by :{" "}
                     <span className={"text-uppercase"}>{company}</span>
                   </h4>
@@ -60,7 +60,7 @@ class Details extends Component {
                         onClick={() => {
                             value.addToCart(id);
                     }}>
-                      {inCart ? "in Cart" : "add to cart"}
+                      {inCart ? "in cart" : "add to cart"}
                     </ButtonContainer>
                   </div>
                 </div>
